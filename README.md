@@ -50,7 +50,7 @@ The following steps are only required if you want to run the notebooks
 * If you have Anaconda installed:
   * Start Jupyter from the Anaconda-navigator
   * In the conda environment, run ``conda install ipykernel``
-  * To register the environment, run ``python -m ipykernel install --user --name imaging_course_2023
+  * To register the environment, run ``python -m ipykernel install --user --name imaging_course_2023``
   * Select the notebook you wish to run and select the ``Kernel>Change kernel>Python [conda env:imaging_course_2023]``
   or ``Kernel>Change kernel>imaging_course_2023``
 * If Anaconda is not installed:
