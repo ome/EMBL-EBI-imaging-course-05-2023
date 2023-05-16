@@ -1,0 +1,12 @@
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+  - ome
+dependencies:
+  - python==3.8.*
+  - ome::zeroc-ice36-python==3.6.5
+  - pip:
+    - omero-py==5.13.1
+    - cellpose==2.2.1
+    - matplotlib==3.7.1
