@@ -1,3 +1,9 @@
+## Running the notebooks
+
+### Running on cloud resources
+* [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ome/EMBL-EBI-imaging-course-05-2023/)
+
+
 ### Running locally
 
 Finally, if you would like to install the necessary requirements locally,
