@@ -7,7 +7,6 @@ dependencies:
   - python==3.9.*
   - intermine==1.13.0
   - ipywidgets<8  # required for display. Remove if you are not using notebook
-  - conda-forge::matplotlib==3.7.1
   - numpy==1.24.3
   - pandas==1.5.3
   - pip
@@ -15,3 +14,4 @@ dependencies:
   - ome::zeroc-ice36-python==3.6.5
   - pip:
     - omero-py==5.13.1
+    - matplotlib==3.7.1
