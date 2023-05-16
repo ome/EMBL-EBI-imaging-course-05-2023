@@ -12,34 +12,22 @@ Day 5 *Distributed/Cloud computing practical* contains a collection of notebooks
 
 ### Running on cloud resources
 
-* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ome/EMBL-EBI-imaging-course-05-2023/main)
 * [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ome/EMBL-EBI-imaging-course-05-2023/)
-
-### Running in Docker
-
-
-Alternatively, if you have Docker installed, you can use the [repo2docker](https://repo2docker.readthedocs.io/en/latest/)
-tool to run this repository as a local Docker instance:
-
-    $ git clone https://github.com/ome/EMBL-EBI-imaging-course-05-2023
-    $ cd EMBL-EBI-imaging-course-05-2023
-    $ repo2docker .
-
-Then follow the instructions that are printed after the Docker image is built.
 
 
 ### Running locally
 
 Finally, if you would like to install the necessary requirements locally,
-we suggest using conda:
+we suggest using mamba:
 
-Install Anaconda https://www.anaconda.com/products/individual#Downloads
+* Install Anaconda https://www.anaconda.com/products/individual#Downloads
+* In the base environment, run ``conda install -n base conda-forge::mamba`` 
 
 Then, create the environment:
 
     $ git clone https://github.com/ome/EMBL-EBI-imaging-course-05-2023
     $ cd EMBL-EBI-imaging-course-05-2023
-    $ conda env create -n imaging_course_2023 -f binder/environment.yml
+    $ mamba env create -n imaging_course_2023 -f binder/environment.yml
 
 and activate the newly created environment:
 
@@ -49,7 +37,7 @@ The following steps are only required if you want to run the notebooks
 
 * If you have Anaconda installed:
   * Start Jupyter from the Anaconda-navigator
-  * In the conda environment, run ``conda install ipykernel``
+  * In the conda environment, run ``mamba install ipykernel``
   * To register the environment, run ``python -m ipykernel install --user --name imaging_course_2023``
   * Select the notebook you wish to run and select the ``Kernel>Change kernel>Python [conda env:imaging_course_2023]``
   or ``Kernel>Change kernel>imaging_course_2023``
