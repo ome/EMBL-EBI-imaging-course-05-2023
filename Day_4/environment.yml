@@ -4,6 +4,7 @@ channels:
   - defaults
   - ome
 dependencies:
+  - python==3.9.*
   - intermine==1.13.0
   - ipywidgets<8  # required for display. Remove if you are not using notebook
   - matplotlib==3.7.1
