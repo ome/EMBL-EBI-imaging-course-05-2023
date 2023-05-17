@@ -23,22 +23,22 @@ we suggest using mamba:
 * Install Anaconda https://www.anaconda.com/products/individual#Downloads
 * In the base environment, run ``conda install -n base conda-forge::mamba`` 
 
-Then, create the environment:
+Then, create the environment for a given day:
 
     $ git clone https://github.com/ome/EMBL-EBI-imaging-course-05-2023
     $ cd EMBL-EBI-imaging-course-05-2023
-    $ mamba env create -n imaging_course_2023 -f binder/environment.yml
+    $ mamba env create -n imaging_course_day4_2023 -f Day_4/environment.yml
 
 and activate the newly created environment:
 
-    $ conda activate imaging_course_2023
+    $ conda activate imaging_course_day4_2023
 
 The following steps are only required if you want to run the notebooks
 
 * If you have Anaconda installed:
   * Start Jupyter from the Anaconda-navigator
   * In the conda environment, run ``mamba install ipykernel``
-  * To register the environment, run ``python -m ipykernel install --user --name imaging_course_2023``
+  * To register the environment, run ``python -m ipykernel install --user --name imaging_course_day4_2023``
   * Select the notebook you wish to run and select the ``Kernel>Change kernel>Python [conda env:imaging_course_2023]``
   or ``Kernel>Change kernel>imaging_course_2023``
 * If Anaconda is not installed:
