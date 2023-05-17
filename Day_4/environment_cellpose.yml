@@ -4,7 +4,7 @@ channels:
   - defaults
   - ome
 dependencies:
-  - python==3.8.*
+  - python==3.9.*
   - ome::zeroc-ice36-python==3.6.5
   - pip:
     - omero-py==5.13.1
