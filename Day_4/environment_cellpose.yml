@@ -11,3 +11,4 @@ dependencies:
     - omero-py==5.13.1
     - cellpose==2.2.1
     - matplotlib==3.7.1
+    - omero-cli-zarr==0.5.2
