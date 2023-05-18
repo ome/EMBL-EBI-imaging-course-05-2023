@@ -1,3 +1,4 @@
+name: imaging_course_day4_2023
 channels:
   - bioconda
   - conda-forge
@@ -5,13 +6,13 @@ channels:
   - ome
 dependencies:
   - python==3.9.*
-  - intermine==1.13.0
-  - ipywidgets<8  # required for display. Remove if you are not using notebook
   - numpy==1.24.3
   - pandas==1.5.3
   - pip
   - scikit-image==0.19.3
   - ome::zeroc-ice36-python==3.6.5
   - pip:
+    - intermine==1.13.0
+    - ipywidgets<8  # required for display. Remove if you are not using notebook
     - omero-py==5.13.1
     - matplotlib==3.7.1
