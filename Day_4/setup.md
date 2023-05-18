@@ -7,16 +7,26 @@
 ### Running locally
 
 Finally, if you would like to install the necessary requirements locally,
-we suggest using mamba:
+we suggest using Mamba:
 
-* Install Anaconda https://www.anaconda.com/products/individual#Downloads
-* In the base environment, run ``conda install -n base conda-forge::mamba``
+* If you do not have any pre-existing conda installation, [install Mamba the recommended way](https://mamba.readthedocs.io/en/latest/installation.html#installation), this means using [mambaforge]https://github.com/conda-forge/miniforge#mambaforge. 
+* In case you have a pre-existing conda installation, you can install Mamba by either:
+  - Using the recommended way to install Mamba from https://github.com/conda-forge/miniforge#mambaforge This will not invalidate your conda installation, but possibly your pre-existing conda envs will be in a different location (e.g. ``/Users/user/opt/anaconda3/envs/``) then the new mamba envs (e.g. ``/Users/user/mambaforge/envs/``). You can verify this by running ``conda env list``. The addition of ``export CONDA_ENVS_PATH=/Users/user/opt/anaconda3/envs/`` into your ``.bashprofile`` or ``.zprofile`` file will fix this. 
+  - Use the [Existing conda install](https://mamba.readthedocs.io/en/latest/installation.html#existing-conda-install) way, i.e. run ``conda install mamba -n base -c conda-forge`` whilst in the base environment. This way can take much longer time than the recommended way described above, and might not lead to a successful installation, especially if run on arm64 (Apple Silicon) OS X.
 
-Then, create the environment:
+Create the environment:
+
+For Windows, OS X x86_64 (NOT arm64 Apple Silicon), Linux:
 
     $ git clone https://github.com/ome/EMBL-EBI-imaging-course-05-2023
     $ cd EMBL-EBI-imaging-course-05-2023
     $ mamba env create -n imaging_course_day_4_2023 -f Day_4/environment.yml
+
+For OS X arm64 Apple Silicon
+
+    $ git clone https://github.com/ome/EMBL-EBI-imaging-course-05-2023
+    $ cd EMBL-EBI-imaging-course-05-2023
+    $ CONDA_SUBDIR=osx-64 mamba env create -n imaging_course_day_4_2023 -f Day_4/environment.yml
 
 and activate the newly created environment:
 
