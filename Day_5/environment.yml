@@ -11,3 +11,4 @@ dependencies:
     - ome-zarr==0.7.1
     - dask-image==2023.3.0
     - matplotlib==3.7.1
+    - cellpose==2.2.1
