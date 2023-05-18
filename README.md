@@ -2,7 +2,7 @@
 
 This repository contains materials for the May 2023 virtual course [Microscopy data analysis: machine learning and the BioImage Archive](https://www.ebi.ac.uk/training/events/microscopy-data-analysis-0/).
 
-Day 4 *Image data resource practical* contains a collection of notebooks with code and text. It also contains the presentation [Image Data Resource: Data Submission and Curation].
+Day 4 *Image data resource practical* contains a collection of notebooks with code and text.
 
 Day 5 *Distributed/Cloud computing practical* contains a collection of notebooks with code and text.
 
