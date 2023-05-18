@@ -8,4 +8,5 @@ dependencies:
     - cellpose==2.2.1
     - matplotlib==3.7.1
     - ome-zarr==0.7.1
+    - pandas==2.0.1
     
