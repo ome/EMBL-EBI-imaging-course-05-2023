@@ -9,9 +9,9 @@
 Finally, if you would like to install the necessary requirements locally,
 we suggest using Mamba:
 
-* If you do not have any pre-existing conda installation, [install Mamba the recommended way](https://mamba.readthedocs.io/en/latest/installation.html#installation), this means using [mambaforge]https://github.com/conda-forge/miniforge#mambaforge. 
+* If you do not have any pre-existing conda installation, [install Mamba](https://mamba.readthedocs.io/en/latest/installation.html#installation) and use [mambaforge](https://github.com/conda-forge/miniforge#mambaforge). 
 * In case you have a pre-existing conda installation, you can install Mamba by either:
-  - Using the recommended way to install Mamba from https://github.com/conda-forge/miniforge#mambaforge This will not invalidate your conda installation, but possibly your pre-existing conda envs will be in a different location (e.g. ``/Users/user/opt/anaconda3/envs/``) then the new mamba envs (e.g. ``/Users/user/mambaforge/envs/``). You can verify this by running ``conda env list``. The addition of ``export CONDA_ENVS_PATH=/Users/user/opt/anaconda3/envs/`` into your ``.bashprofile`` or ``.zprofile`` file will fix this. 
+  - Using the recommended way to install Mamba from [mambaforge](https://github.com/conda-forge/miniforge#mambaforge). This will not invalidate your conda installation, but possibly your pre-existing conda envs will be in a different location (e.g. ``/Users/USER_NAME/opt/anaconda3/envs/``) then the new mamba envs (e.g. ``/Users/USER_NAME/mambaforge/envs/``). You can verify this by running ``conda env list``. The addition of ``export CONDA_ENVS_PATH=/Users/user/opt/anaconda3/envs/`` into your ``.bashprofile`` or ``.zprofile`` file will fix this. 
   - Use the [Existing conda install](https://mamba.readthedocs.io/en/latest/installation.html#existing-conda-install) way, i.e. run ``conda install mamba -n base -c conda-forge`` whilst in the base environment. This way can take much longer time than the recommended way described above, and might not lead to a successful installation, especially if run on arm64 (Apple Silicon) OS X.
 
 Create the environment:
