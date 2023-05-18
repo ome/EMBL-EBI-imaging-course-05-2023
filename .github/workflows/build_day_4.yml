@@ -13,13 +13,13 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [ubuntu-latest, mac-latest]
+        os: [ubuntu-latest]
+        envs: [Day_4/environment_cellpose.yml, Day_4/environment.yml]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
-      - name: Install Conda environment with Micromamba
+      - name: Install Conda environment for ${{ matrix.envs }} with Micromamba
         uses: mamba-org/provision-with-micromamba@v15
         with:
-          environment-file: Day_4/environment_cellpose.yml
-          environment-name: day_4_cellpose
+          environment-file: ${{ matrix.envs }}
