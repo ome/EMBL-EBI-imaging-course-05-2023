@@ -1,3 +1,4 @@
+name: imaging_course_minio_day5_2023
 channels:
   - bioconda
   - conda-forge
