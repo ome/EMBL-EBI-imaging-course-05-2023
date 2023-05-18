@@ -7,8 +7,8 @@ channels:
   - joshmoore
 dependencies:
   - pip
-  - napari==0.4.17
   - go-mc
   - pip:
+    - napari[all]
     - napari-ome-zarr==0.5.2
 
