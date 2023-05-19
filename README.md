@@ -1,4 +1,5 @@
 # EMBL-EBI-imaging-course-05-2023
+[![Actions Status](https://github.com/ome/EMBL-EBI-imaging-course-05-2023/workflows/build/badge.svg)](https://github.com/ome/EMBL-EBI-imaging-course-05-2023/actions)
 
 This repository contains materials for the May 2023 virtual course [Microscopy data analysis: machine learning and the BioImage Archive](https://www.ebi.ac.uk/training/events/microscopy-data-analysis-0/).
 
