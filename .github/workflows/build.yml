@@ -13,7 +13,7 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [ubuntu-latest, macos-latest]
         envs: [Day_4/environment_cellpose.yml, Day_4/environment.yml, Day_5/environment_minio.yml, Day_5/environment.yml]
     runs-on: ${{ matrix.os }}
     steps:
