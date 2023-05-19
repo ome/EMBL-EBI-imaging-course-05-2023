@@ -14,12 +14,13 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        envs: [Day_4/environment_cellpose.yml, Day_4/environment.yml, Day_5/environment.yml]
+        envs: [Day_4/environment_cellpose.yml, Day_4/environment.yml, Day_5/environment_minio.yml, Day_5/environment.yml]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
       - name: Install Conda environment for ${{ matrix.envs }} with Micromamba
+        if: "!((startsWith(matrix.os, 'windows-latest') &&  startsWith(matrix.envs, 'Day_5/environment_minio.yml')))"
         uses: mamba-org/provision-with-micromamba@v15
         with:
           environment-file: ${{ matrix.envs }}
