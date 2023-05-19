@@ -1,0 +1,13 @@
+name: imaging_course_conversion_day5_2023
+channels:
+  - ome
+  - conda-forge
+  - defaults
+dependencies:
+  - python == 3.9.*
+  - bioformats2raw
+  - raw2ometiff
+  - pip
+  - pip:
+    - napari[all]
+    - napari-ome-zarr==0.5.2
