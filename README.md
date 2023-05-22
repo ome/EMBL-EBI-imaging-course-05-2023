@@ -8,7 +8,6 @@ Day 4 *Image data resource practical* contains a collection of notebooks with co
 Day 5 *Distributed/Cloud computing practical* contains a collection of notebooks with code and text.
 
 
-
 ## Running the notebooks
 
 ### Running on cloud resources
@@ -18,4 +17,10 @@ Day 5 *Distributed/Cloud computing practical* contains a collection of notebooks
 
 ### Running locally
 
-Please follow the instructions in [Day 4](Day_4/setup.md) and [Day 5](Day_5/setup.md).
+First download the content:
+
+    $ git clone https://github.com/ome/EMBL-EBI-imaging-course-05-2023
+    
+    $ cd EMBL-EBI-imaging-course-05-2023
+
+Follow the instructions in [Day 4](Day_4/setup.md) and [Day 5](Day_5/setup.md).
