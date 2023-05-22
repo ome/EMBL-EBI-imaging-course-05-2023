@@ -6,6 +6,7 @@ channels:
   - ome
   - joshmoore
 dependencies:
+  - python == 3.9.*
   - go-mc==2020.11.17
   - pip:
     - napari[all]
