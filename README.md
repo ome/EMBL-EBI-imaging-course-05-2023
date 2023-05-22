@@ -18,4 +18,4 @@ Day 5 *Distributed/Cloud computing practical* contains a collection of notebooks
 
 ### Running locally
 
-Please follow the instructions in [Day 4](Day_4/workshop.ipynb) and [Day 5](Day_5/workshop.ipynb).
+Please follow the instructions in [Day 4](Day_4/setup.md) and [Day 5](Day_5/setup.md).
