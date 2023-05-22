@@ -1,0 +1,52 @@
+## Running the notebooks
+
+### Running on cloud resources
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ome/EMBL-EBI-imaging-course-05-2023/)
+
+
+### Running locally
+
+Finally, if you would like to install the necessary requirements locally,
+we suggest using Mamba:
+
+* If you do not have any pre-existing conda installation, [install Mamba](https://mamba.readthedocs.io/en/latest/installation.html#installation) and use [mambaforge](https://github.com/conda-forge/miniforge#mambaforge). 
+* In case you have a pre-existing conda installation, you can install Mamba by either:
+  - Using the recommended way to install Mamba from [mambaforge](https://github.com/conda-forge/miniforge#mambaforge). This will not invalidate your conda installation, but possibly your pre-existing conda envs will be in a different location (e.g. ``/Users/USER_NAME/opt/anaconda3/envs/``) then the new mamba envs (e.g. ``/Users/USER_NAME/mambaforge/envs/``). You can verify this by running ``conda env list``. The addition of ``export CONDA_ENVS_PATH=/Users/user/opt/anaconda3/envs/`` into your ``.bashprofile`` or ``.zprofile`` file will fix this. 
+  - Use the [Existing conda install](https://mamba.readthedocs.io/en/latest/installation.html#existing-conda-install) way, i.e. run ``conda install mamba -n base -c conda-forge`` whilst in the base environment. This way can take much longer time than the recommended way described above, and might not lead to a successful installation, especially if run on arm64 (Apple Silicon) OS X.
+
+To avoid conflict with used packages, we have prepared two environments:
+``Day_4/environment_cellpose.yml`` and ``Day_4/environment.yml``
+
+Create the two environments. For this, first run the commands below as written, then replace ``Day_4/environment_cellpose.yml`` motives with ``Day_4/environment.yml`` and run again to create the other env:
+
+For Windows, OS X x86_64 (NOT arm64 Apple Silicon), Linux:
+
+    $ git clone https://github.com/ome/EMBL-EBI-imaging-course-05-2023
+    
+    $ cd EMBL-EBI-imaging-course-05-2023
+
+    $ mamba env create -f Day_4/environment_cellpose.yml
+
+For OS X arm64 Apple Silicon
+
+    $ git clone https://github.com/ome/EMBL-EBI-imaging-course-05-2023   
+    
+    $ cd EMBL-EBI-imaging-course-05-2023
+    
+    $ CONDA_SUBDIR=osx-64 mamba env create -f Day_4/environment_cellpose.yml
+
+and activate the newly created environment:
+
+    $ conda activate imaging_course_cellpose_day4_2023
+
+The following steps are only required if you want to run the notebooks
+
+* If you have Anaconda installed:
+  * Start Jupyter from the Anaconda-navigator
+  * In the conda environment, run ``mamba install ipykernel``
+  * To register the environment, run ``python -m ipykernel install --user --name imaging_course_cellpose_day4_2023``
+  * Select the notebook you wish to run and select the ``Kernel>Change kernel>Python [conda env:imaging_course_day4_2023]`` or ``Kernel>Change kernel>imaging_course_cellpose_day4_2023``
+* If Anaconda is not installed:
+  * In the environment, install ``jupyter`` e.g. ``pip install jupyter``
+  * Add the virtualenv as a jupyter kernel i.e. ``ipython kernel install --name "imaging_course_cellpose_day4_2023" --user``
+  * Open jupyter notebook i.e. ``jupyter notebook`` and select the ``imaging_course_cellpose_day4_2023`` kernel or ``[conda env:imaging_course_cellpose_day4_2023]`` according to what is available.
