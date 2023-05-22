@@ -1,0 +1,25 @@
+name: imaging_course_cp_day4_2023
+channels:
+  - defaults
+  - anaconda
+  - bioconda
+  - conda-forge
+  - ome
+dependencies:
+  - zeroc-ice36-python
+  - h5py==3.7.0
+  - pandas==1.5.3
+  - pip
+  - python==3.8.*
+  - conda-forge::omero-py
+  - openjdk==11.0.13
+  - conda-forge::wxpython==4.1.0
+  - imageio==2.26.0
+  - inflect==5.3.0
+  - Jinja2==3.1.2
+  - mahotas==1.4.13
+  - scikit-image==0.20.0
+  - scikit-learn==1.2.2
+  - mysqlclient==1.4.6
+  - pip:
+    - git+https://github.com/CellProfiler/CellProfiler.git@v4.2.4
