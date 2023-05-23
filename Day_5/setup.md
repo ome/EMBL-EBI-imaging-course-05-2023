@@ -14,10 +14,10 @@ we suggest using Mamba:
   - Using the recommended way to install Mamba from [mambaforge](https://github.com/conda-forge/miniforge#mambaforge). This will not invalidate your conda installation, but possibly your pre-existing conda envs will be in a different location (e.g. ``/Users/USER_NAME/opt/anaconda3/envs/``) then the new mamba envs (e.g. ``/Users/USER_NAME/mambaforge/envs/``). You can verify this by running ``conda env list``. The addition of ``export CONDA_ENVS_PATH=/Users/user/opt/anaconda3/envs/`` into your ``.bashprofile`` or ``.zprofile`` file will fix this. 
   - Use the [Existing conda install](https://mamba.readthedocs.io/en/latest/installation.html#existing-conda-install) way, i.e. run ``conda install mamba -n base -c conda-forge`` whilst in the base environment. This way can take much longer time than the recommended way described above, and might not lead to a successful installation, especially if run on arm64 (Apple Silicon) OS X.
 
-To avoid conflict with used packages, we have prepared two environments:
-``Day_4/environment_cellpose.yml`` and ``Day_4/environment.yml``
+To avoid conflict with used packages, we have prepared several environments:
+``Day_5/environment.yml``, ``Day_5/environment_conversion.yml``, ``Day_5/environment_minio.yml`` and ``Day_5/environment_cp.yml``.
 
-Create the two environments. For this, first run the commands below as written, then replace ``Day_4/environment_cellpose.yml`` motives with ``Day_4/environment.yml`` and run again to create the other env:
+Create the environments. For this, first run the commands below as written, then replace ``Day_5/environment_conversion.yml`` motives with ``Day_5/environment.yml``, ``Day_5/environment_cp.yml`` or ``Day_5/environment_minio.yml``  and run again to create the other env:
 
 For Windows, OS X x86_64 (NOT arm64 Apple Silicon), Linux:
 
@@ -25,7 +25,7 @@ For Windows, OS X x86_64 (NOT arm64 Apple Silicon), Linux:
     
     $ cd EMBL-EBI-imaging-course-05-2023
 
-    $ mamba env create -f Day_4/environment_cellpose.yml
+    $ mamba env create -f Day_5/environment_conversion.yml
 
 For OS X arm64 Apple Silicon
 
@@ -33,21 +33,21 @@ For OS X arm64 Apple Silicon
     
     $ cd EMBL-EBI-imaging-course-05-2023
     
-    $ CONDA_SUBDIR=osx-64 mamba env create -f Day_4/environment_cellpose.yml
+    $ CONDA_SUBDIR=osx-64 mamba env create -f Day_5/environment_conversion.yml
 
 and activate the newly created environment:
 
-    $ conda activate imaging_course_cellpose_day4_2023
+    $ conda activate imaging_course_conversion_day5_2023
 
 The following steps are only required if you want to run the notebooks
 
 * If you have Anaconda installed:
   * Start Jupyter from the Anaconda-navigator
   * In the conda environment, run ``mamba install ipykernel``  (for OS X Apple Silicon ``CONDA_SUBDIR=osx-64 mamba install ipykernel``)
-  * To register the environment, run ``python -m ipykernel install --user --name imaging_course_cellpose_day4_2023``
-  * Select the notebook you wish to run and select the ``Kernel>Change kernel>Python [conda env:imaging_course_day4_2023]`` or ``Kernel>Change kernel>imaging_course_cellpose_day4_2023``
+  * To register the environment, run ``python -m ipykernel install --user --name imaging_course_conversion_day5_2023``
+  * Select the notebook you wish to run and select the ``Kernel>Change kernel>Python [conda env:imaging_course_conversion_day5_2023]`` or ``Kernel>Change kernel>imaging_course_conversion_day5_2023``
 * If Anaconda is not installed:
   * In the environment, install ``jupyter`` e.g. ``pip install jupyter``
-  * Add the virtualenv as a jupyter kernel i.e. ``ipython kernel install --name "imaging_course_cellpose_day4_2023" --user``
-  * Open jupyter notebook i.e. ``jupyter notebook`` and select the ``imaging_course_cellpose_day4_2023`` kernel or ``[conda env:imaging_course_cellpose_day4_2023]`` according to what is available.
+  * Add the virtualenv as a jupyter kernel i.e. ``ipython kernel install --name "imaging_course_conversion_day5_2023" --user``
+  * Open jupyter notebook i.e. ``jupyter notebook`` and select the ``imaging_course_conversion_day5_2023`` kernel or ``[conda env:imaging_course_conversion_day5_2023]`` according to what is available.
 
