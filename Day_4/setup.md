@@ -43,7 +43,7 @@ The following steps are only required if you want to run the notebooks
 
 * If you have Anaconda installed:
   * Start Jupyter from the Anaconda-navigator
-  * In the conda environment, run ``mamba install ipykernel``
+  * In the conda environment, run ``mamba install ipykernel`` (for OS X Apple Silicon ``CONDA_SUBDIR=osx-64 mamba install ipykernel``)
   * To register the environment, run ``python -m ipykernel install --user --name imaging_course_cellpose_day4_2023``
   * Select the notebook you wish to run and select the ``Kernel>Change kernel>Python [conda env:imaging_course_day4_2023]`` or ``Kernel>Change kernel>imaging_course_cellpose_day4_2023``
 * If Anaconda is not installed:
