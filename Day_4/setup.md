@@ -17,7 +17,7 @@ we suggest using Mamba:
 To avoid conflict with used packages, we have prepared several environments:
 ``Day_4/environment_cellpose.yml``, ``Day_4/environment.yml`` and ``Day_4/environment_cp.yml``
 
-Create the environments. For this, first run the commands below as written, then replace ``Day_4/environment_cellpose.yml`` motives with ``Day_4/environment.yml`` or ``Day_4/environment_cp.yml`` and run again to create the other env:
+Create the environments. For this, first run the commands below as written, then replace ``Day_4/environment_cellpose.yml`` motives with ``Day_4/environment.yml`` or ``Day_4/environment_cp.yml`` and run again to create the other envs:
 
 For Windows, OS X x86_64 (NOT arm64 Apple Silicon), Linux:
 
