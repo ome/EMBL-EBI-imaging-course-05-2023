@@ -8,6 +8,7 @@ channels:
 dependencies:
   - python == 3.9.*
   - go-mc==2020.11.17
+  - pip==23.0.1
   - pip:
     - napari[all]
     - napari-ome-zarr==0.5.2
