@@ -8,7 +8,7 @@ channels:
 dependencies:
   - h5py==3.7.0
   - pandas==1.5.3
-  - pip==23.0.1
+  - pip
   - python==3.8.*
   - conda-forge::omero-py
   - openjdk==11.0.13
