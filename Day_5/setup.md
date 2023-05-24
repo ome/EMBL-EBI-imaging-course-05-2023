@@ -17,7 +17,7 @@ we suggest using Mamba:
 To avoid conflict with used packages, we have prepared several environments:
 ``Day_5/environment.yml``, ``Day_5/environment_conversion.yml``, ``Day_5/environment_minio.yml`` and ``Day_5/environment_cp.yml``.
 
-Create the environments. For this, first run the commands below as written, then replace ``Day_5/environment_conversion.yml`` motives with ``Day_5/environment.yml``, ``Day_5/environment_cp.yml`` or ``Day_5/environment_minio.yml``  and run again to create the other envs:
+Create the environments. For this, first run the commands below as written, then replace ``Day_5/environment_conversion.yml`` motives with ``Day_5/environment.yml``, ``Day_5/environment_cp.yml`` or ``Day_5/environment_minio.yml``  and run again to create the other envs. Note that unlike on Day_4, the Cellpose on Day_5 is included in the ``Day_5/environment.yml``:
 
 For Windows, OS X x86_64 (NOT arm64 Apple Silicon), Linux:
 
