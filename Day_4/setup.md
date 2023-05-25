@@ -43,7 +43,7 @@ and activate the newly created environment:
 Before creating a new environment, remember to deactivate the current one:
 
     $ conda deactivate
-    
+
 The following steps are only required if you want to run the notebooks
 
 * If you have Anaconda installed:
@@ -55,3 +55,6 @@ The following steps are only required if you want to run the notebooks
   * In the environment, install ``jupyter`` e.g. ``pip install jupyter``
   * Add the virtualenv as a jupyter kernel i.e. ``ipython kernel install --name "imaging_course_cellpose_day4_2023" --user``
   * Open jupyter notebook i.e. ``jupyter notebook`` and select the ``imaging_course_cellpose_day4_2023`` kernel or ``[conda env:imaging_course_cellpose_day4_2023]`` according to what is available.
+
+  To stop the notebook server, in the terminal where te server is running, press ``Ctrl C``. The following question will be asked in the terminal ``Shutdown this notebook server (y/[n])?``. Enter the desired choice.
+  
