@@ -44,7 +44,7 @@ Before creating a new environment, remember to deactivate the current one:
 
     $ conda deactivate
 
-The following steps are only required if you want to run the notebooks
+The following steps are only required if you want to run the notebooks.
 
 * If you have Anaconda installed:
   * Start Jupyter from the Anaconda-navigator
