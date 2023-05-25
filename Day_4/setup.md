@@ -39,6 +39,11 @@ and activate the newly created environment:
 
     $ conda activate imaging_course_cellpose_day4_2023
 
+
+Before creating a new environment, remember to deactivate the current one:
+
+    $ conda deactivate
+    
 The following steps are only required if you want to run the notebooks
 
 * If you have Anaconda installed:
