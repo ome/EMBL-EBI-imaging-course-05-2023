@@ -43,6 +43,7 @@ Before creating a new environment, remember to deactivate the current one:
 
     $ conda deactivate
 
+See also [Conda command reference](https://docs.conda.io/projects/conda/en/latest/commands.html).
 
 The following steps are only required if you want to run the notebooks.
 
