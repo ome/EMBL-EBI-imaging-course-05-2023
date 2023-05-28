@@ -1,0 +1,14 @@
+name: imaging_course_stardist_day5_2023
+channels:
+  - conda-forge
+dependencies:
+  - python==3.9.*
+  - conda-forge::ipywidgets==8.0.4
+  - pip
+  - pip:
+    - stardist==0.8.3
+    - matplotlib==3.7.1
+    - ome-zarr==0.7.1
+    - pandas==2.0.1
+    - tensorflow-macos==2.12.0; platform_system == "Darwin"
+    - tensorflow==2.12.0; platform_system != "Darwin"
