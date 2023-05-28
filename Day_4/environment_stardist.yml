@@ -1,0 +1,20 @@
+name: imaging_course_stardist_day4_2023
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+  - ome
+dependencies:
+  - python==3.9.*
+  #- ome::zeroc-ice36-python==3.6.5
+  - conda-forge::ipywidgets==8.0.4
+  - pip
+  - pip:
+    - omero-py==5.13.1
+    - stardist==0.8.3
+    - matplotlib==3.7.1
+    - omero-cli-zarr==0.5.2
+    - tensorflow-macos==2.12.0; platform_system == "Darwin"
+    - tensorflow==2.12.0; platform_system != "Darwin"
+    - https://github.com/ome/zeroc-ice-py-github-ci/releases/download/0.2.0/zeroc_ice-3.6.5-cp39-cp39-linux_x86_64.whl; platform_system=="Linux"
+    - https://github.com/glencoesoftware/zeroc-ice-py-macos-x86_64/releases/download/20220722/zeroc_ice-3.6.5-cp39-cp39-macosx_10_15_x86_64.whl; platform_system == "Darwin"
