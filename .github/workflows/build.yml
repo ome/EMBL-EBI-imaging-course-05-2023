@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: '3.9'
       - name: Install Conda environment for ${{ matrix.envs }} with Micromamba
-        if: "!((startsWith(matrix.os, 'windows-latest') &&  startsWith(matrix.envs, 'Day_5/environment_minio.yml')))"
+        if: "!(startsWith(matrix.os, 'windows-latest') &&  startsWith(matrix.envs, 'Day_5/environment_minio.yml'))"
         uses: mamba-org/provision-with-micromamba@v15
         with:
           environment-file: ${{ matrix.envs }}
