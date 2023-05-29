@@ -178,8 +178,7 @@ def main():
         z = int(image.getPrimaryPixels().getSizeZ() / 2)
         cellpose_masks, flows, styles, diams = model.eval(data[t, :, z, :, :], diameter=None, channels=channels)  # noqa
 
-        # Save the labels as geojson
-        save_labels_as_geojson(gc, image_id)
+        # Save the outlines on disk
         n = str(image_id) + "_" + str(z)
         outlines = utils.outlines_list(cellpose_masks)
         io.outlines_to_text(n, outlines)
