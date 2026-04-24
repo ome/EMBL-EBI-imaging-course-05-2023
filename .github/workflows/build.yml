@@ -20,9 +20,9 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: '3.12'
       - name: Install Conda environment for ${{ matrix.envs }} with Micromamba
         if: "!(startsWith(matrix.os, 'windows-latest') &&  startsWith(matrix.envs, 'Day_5/environment_minio.yml'))"
-        uses: mamba-org/provision-with-micromamba@v15
+        uses: mamba-org/setup-micromamba@v3
         with:
           environment-file: ${{ matrix.envs }}

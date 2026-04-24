@@ -3,16 +3,15 @@ channels:
   - bioconda
   - conda-forge
   - defaults
-  - ome
 dependencies:
   - python==3.9.*
-  - numpy==1.24.3
-  - pandas==1.5.3
-  - scikit-image==0.19.3
-  - ome::zeroc-ice36-python==3.6.5
+  - numpy==1.26.4
+  - pandas==2.2.1
+  - conda-forge::zeroc-ice==3.6.5
+  - conda-forge::ipywidgets==8.0.4
   - pip
   - pip:
+    - jupyter==1.0.0
     - intermine==1.13.0
-    - ipywidgets<8  # required for display. Remove if you are not using notebook
-    - omero-py==5.13.1
-    - matplotlib==3.7.1
+    - omero-py==5.19.1
+    - matplotlib==3.8.4

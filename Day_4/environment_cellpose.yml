@@ -3,14 +3,14 @@ channels:
   - bioconda
   - conda-forge
   - defaults
-  - ome
 dependencies:
   - python==3.9.*
-  - ome::zeroc-ice36-python==3.6.5
+  - conda-forge::zeroc-ice==3.6.5
   - conda-forge::ipywidgets==8.0.4
   - pip
   - pip:
-    - omero-py==5.13.1
-    - cellpose==2.2.1
-    - matplotlib==3.7.1
-    - omero-cli-zarr==0.5.2
+    - jupyter==1.0.0
+    - omero-py==5.19.1
+    - cellpose==3.0.7
+    - matplotlib==3.8.4
+    - omero-cli-zarr==0.5.5

@@ -47,7 +47,7 @@ from cellpose import io, models, utils
 
 # Dask array loaded from S3
 data = None
-ENDPOINT_URL = 'https://uk1s3.embassy.ebi.ac.uk/'
+ENDPOINT_URL = 'https://livingobjects.ebi.ac.uk/'
 
 
 # Load-binary
